@@ -14,6 +14,9 @@ Use Case: The profile page will showcase personal information, hobbies, and cont
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
         header {
             background-color: #333;
@@ -39,13 +42,14 @@ Use Case: The profile page will showcase personal information, hobbies, and cont
             margin: 1rem;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            flex: 1;
         }
         footer {
             background-color: #333;
             color: #fff;
             text-align: center;
             padding: 1rem;
-            position: fixed;
+            position: relative;
             width: 100%;
             bottom: 0;
         }
@@ -67,7 +71,7 @@ Use Case: The profile page will showcase personal information, hobbies, and cont
     <!-- Bio -->
     <section id="about">
         <h2>About Me</h2>
-        <img src="images/my_image.jpg" alt="my image">
+        <img src="images/my_image.jpg" alt="A picture of Haruna Usman Bello">
         <p>
             Hello. My name is Haruna Usman Bello, and I am passionate about Software Development.
             I enjoy coding, and I am always eager to learn new things.
